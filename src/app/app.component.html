@@ -1,0 +1,7 @@
+<h1>Proyecto {{ title }}</h1>
+<h2>{{ sumNum(6, 7) }}</h2>
+<h3> {{ number }} </h3>
+<h1>Listado</h1>
+<div *ngFor="let num of arrNum">
+  <app-custom-buttom [text]="num" [style]="num % 2 === 0 ? 'lightblue' : 'lightcoral'"></app-custom-buttom>
+</div>
